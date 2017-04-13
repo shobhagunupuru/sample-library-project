@@ -5,14 +5,14 @@ include("inc/functions.php");
 $pageTitle = "Full Catalog";
 $section = null;
 
-if (isset($_GET["cat"])) {
-    if ($_GET["cat"] == "books") {
+if (isset($_GET["category"])) {
+    if ($_GET["category"] == "books") {
         $pageTitle = "Books";
         $section = "books";
-    } else if ($_GET["cat"] == "movies") {
+    } else if ($_GET["category"] == "movies") {
         $pageTitle = "Movies";
         $section = "movies";
-    } else if ($_GET["cat"] == "music") {
+    } else if ($_GET["category"] == "music") {
         $pageTitle = "Music";
         $section = "music";
     }
